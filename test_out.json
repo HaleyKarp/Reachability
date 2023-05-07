@@ -1,0 +1,220 @@
+{
+  "type": "module",
+  "text": "import numpy as np\\n\\ndef factorial(n):\\n    if n == 0:\\n        return 1\\n    else:\\n        return n * factorial(n-1)",
+  "children": [
+    {
+      "type": "import_statement",
+      "text": "import numpy as np",
+      "children": [
+        {
+          "type": "import",
+          "text": "import"
+        },
+        {
+          "type": "aliased_import",
+          "text": "numpy as np",
+          "children": [
+            {
+              "type": "dotted_name",
+              "text": "numpy",
+              "children": [
+                {
+                  "type": "identifier",
+                  "text": "numpy"
+                }
+              ]
+            },
+            {
+              "type": "as",
+              "text": "as"
+            },
+            {
+              "type": "identifier",
+              "text": "np"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "function_definition",
+      "text": "def factorial(n):\\n    if n == 0:\\n        return 1\\n    else:\\n        return n * factorial(n-1)",
+      "children": [
+        {
+          "type": "def",
+          "text": "def"
+        },
+        {
+          "type": "identifier",
+          "text": "factorial"
+        },
+        {
+          "type": "parameters",
+          "text": "(n)",
+          "children": [
+            {
+              "type": "(",
+              "text": "("
+            },
+            {
+              "type": "identifier",
+              "text": "n"
+            },
+            {
+              "type": ")",
+              "text": ")"
+            }
+          ]
+        },
+        {
+          "type": ":",
+          "text": ":"
+        },
+        {
+          "type": "block",
+          "text": "if n == 0:\\n        return 1\\n    else:\\n        return n * factorial(n-1)",
+          "children": [
+            {
+              "type": "if_statement",
+              "text": "if n == 0:\\n        return 1\\n    else:\\n        return n * factorial(n-1)",
+              "children": [
+                {
+                  "type": "if",
+                  "text": "if"
+                },
+                {
+                  "type": "comparison_operator",
+                  "text": "n == 0",
+                  "children": [
+                    {
+                      "type": "identifier",
+                      "text": "n"
+                    },
+                    {
+                      "type": "==",
+                      "text": "=="
+                    },
+                    {
+                      "type": "integer",
+                      "text": "0"
+                    }
+                  ]
+                },
+                {
+                  "type": ":",
+                  "text": ":"
+                },
+                {
+                  "type": "block",
+                  "text": "return 1",
+                  "children": [
+                    {
+                      "type": "return_statement",
+                      "text": "return 1",
+                      "children": [
+                        {
+                          "type": "return",
+                          "text": "return"
+                        },
+                        {
+                          "type": "integer",
+                          "text": "1"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "else_clause",
+                  "text": "else:\\n        return n * factorial(n-1)",
+                  "children": [
+                    {
+                      "type": "else",
+                      "text": "else"
+                    },
+                    {
+                      "type": ":",
+                      "text": ":"
+                    },
+                    {
+                      "type": "block",
+                      "text": "return n * factorial(n-1)",
+                      "children": [
+                        {
+                          "type": "return_statement",
+                          "text": "return n * factorial(n-1)",
+                          "children": [
+                            {
+                              "type": "return",
+                              "text": "return"
+                            },
+                            {
+                              "type": "binary_operator",
+                              "text": "n * factorial(n-1)",
+                              "children": [
+                                {
+                                  "type": "identifier",
+                                  "text": "n"
+                                },
+                                {
+                                  "type": "*",
+                                  "text": "*"
+                                },
+                                {
+                                  "type": "call",
+                                  "text": "factorial(n-1)",
+                                  "children": [
+                                    {
+                                      "type": "identifier",
+                                      "text": "factorial"
+                                    },
+                                    {
+                                      "type": "argument_list",
+                                      "text": "(n-1)",
+                                      "children": [
+                                        {
+                                          "type": "(",
+                                          "text": "("
+                                        },
+                                        {
+                                          "type": "binary_operator",
+                                          "text": "n-1",
+                                          "children": [
+                                            {
+                                              "type": "identifier",
+                                              "text": "n"
+                                            },
+                                            {
+                                              "type": "-",
+                                              "text": "-"
+                                            },
+                                            {
+                                              "type": "integer",
+                                              "text": "1"
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "type": ")",
+                                          "text": ")"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

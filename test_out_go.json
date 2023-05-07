@@ -1,0 +1,478 @@
+{
+  "type": "source_file",
+  "text": "package main\\n\\nimport \"fmt\"\\n\\nfunc factorial(n int) int {\\n\tif n == 0 {\\n\t\treturn 1\\n\t}\\n\treturn n * factorial(n-1)\\n}\\n\\nfunc main() {\\n\tn := 5\\n\tresult := factorial(n)\\n\tfmt.Printf(\"Factorial of %d is %d\\n\", n, result)\\n}",
+  "children": [
+    {
+      "type": "package_clause",
+      "text": "package main",
+      "children": [
+        {
+          "type": "package",
+          "text": "package"
+        },
+        {
+          "type": "package_identifier",
+          "text": "main"
+        }
+      ]
+    },
+    {
+      "type": "\n",
+      "text": "\\n\\n"
+    },
+    {
+      "type": "import_declaration",
+      "text": "import \"fmt\"",
+      "children": [
+        {
+          "type": "import",
+          "text": "import"
+        },
+        {
+          "type": "import_spec",
+          "text": "\"fmt\"",
+          "children": [
+            {
+              "type": "interpreted_string_literal",
+              "text": "\"fmt\"",
+              "children": [
+                {
+                  "type": "\"",
+                  "text": "\""
+                },
+                {
+                  "type": "\"",
+                  "text": "\""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "\n",
+      "text": "\\n\\n"
+    },
+    {
+      "type": "function_declaration",
+      "text": "func factorial(n int) int {\\n\tif n == 0 {\\n\t\treturn 1\\n\t}\\n\treturn n * factorial(n-1)\\n}",
+      "children": [
+        {
+          "type": "func",
+          "text": "func"
+        },
+        {
+          "type": "identifier",
+          "text": "factorial"
+        },
+        {
+          "type": "parameter_list",
+          "text": "(n int)",
+          "children": [
+            {
+              "type": "(",
+              "text": "("
+            },
+            {
+              "type": "parameter_declaration",
+              "text": "n int",
+              "children": [
+                {
+                  "type": "identifier",
+                  "text": "n"
+                },
+                {
+                  "type": "type_identifier",
+                  "text": "int"
+                }
+              ]
+            },
+            {
+              "type": ")",
+              "text": ")"
+            }
+          ]
+        },
+        {
+          "type": "type_identifier",
+          "text": "int"
+        },
+        {
+          "type": "block",
+          "text": "{\\n\tif n == 0 {\\n\t\treturn 1\\n\t}\\n\treturn n * factorial(n-1)\\n}",
+          "children": [
+            {
+              "type": "{",
+              "text": "{"
+            },
+            {
+              "type": "if_statement",
+              "text": "if n == 0 {\\n\t\treturn 1\\n\t}",
+              "children": [
+                {
+                  "type": "if",
+                  "text": "if"
+                },
+                {
+                  "type": "binary_expression",
+                  "text": "n == 0",
+                  "children": [
+                    {
+                      "type": "identifier",
+                      "text": "n"
+                    },
+                    {
+                      "type": "==",
+                      "text": "=="
+                    },
+                    {
+                      "type": "int_literal",
+                      "text": "0"
+                    }
+                  ]
+                },
+                {
+                  "type": "block",
+                  "text": "{\\n\t\treturn 1\\n\t}",
+                  "children": [
+                    {
+                      "type": "{",
+                      "text": "{"
+                    },
+                    {
+                      "type": "return_statement",
+                      "text": "return 1",
+                      "children": [
+                        {
+                          "type": "return",
+                          "text": "return"
+                        },
+                        {
+                          "type": "expression_list",
+                          "text": "1",
+                          "children": [
+                            {
+                              "type": "int_literal",
+                              "text": "1"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "\n",
+                      "text": "\\n"
+                    },
+                    {
+                      "type": "}",
+                      "text": "}"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "\n",
+              "text": "\\n"
+            },
+            {
+              "type": "return_statement",
+              "text": "return n * factorial(n-1)",
+              "children": [
+                {
+                  "type": "return",
+                  "text": "return"
+                },
+                {
+                  "type": "expression_list",
+                  "text": "n * factorial(n-1)",
+                  "children": [
+                    {
+                      "type": "binary_expression",
+                      "text": "n * factorial(n-1)",
+                      "children": [
+                        {
+                          "type": "identifier",
+                          "text": "n"
+                        },
+                        {
+                          "type": "*",
+                          "text": "*"
+                        },
+                        {
+                          "type": "call_expression",
+                          "text": "factorial(n-1)",
+                          "children": [
+                            {
+                              "type": "identifier",
+                              "text": "factorial"
+                            },
+                            {
+                              "type": "argument_list",
+                              "text": "(n-1)",
+                              "children": [
+                                {
+                                  "type": "(",
+                                  "text": "("
+                                },
+                                {
+                                  "type": "binary_expression",
+                                  "text": "n-1",
+                                  "children": [
+                                    {
+                                      "type": "identifier",
+                                      "text": "n"
+                                    },
+                                    {
+                                      "type": "-",
+                                      "text": "-"
+                                    },
+                                    {
+                                      "type": "int_literal",
+                                      "text": "1"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": ")",
+                                  "text": ")"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "\n",
+              "text": "\\n"
+            },
+            {
+              "type": "}",
+              "text": "}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "\n",
+      "text": "\\n\\n"
+    },
+    {
+      "type": "function_declaration",
+      "text": "func main() {\\n\tn := 5\\n\tresult := factorial(n)\\n\tfmt.Printf(\"Factorial of %d is %d\\n\", n, result)\\n}",
+      "children": [
+        {
+          "type": "func",
+          "text": "func"
+        },
+        {
+          "type": "identifier",
+          "text": "main"
+        },
+        {
+          "type": "parameter_list",
+          "text": "()",
+          "children": [
+            {
+              "type": "(",
+              "text": "("
+            },
+            {
+              "type": ")",
+              "text": ")"
+            }
+          ]
+        },
+        {
+          "type": "block",
+          "text": "{\\n\tn := 5\\n\tresult := factorial(n)\\n\tfmt.Printf(\"Factorial of %d is %d\\n\", n, result)\\n}",
+          "children": [
+            {
+              "type": "{",
+              "text": "{"
+            },
+            {
+              "type": "short_var_declaration",
+              "text": "n := 5",
+              "children": [
+                {
+                  "type": "expression_list",
+                  "text": "n",
+                  "children": [
+                    {
+                      "type": "identifier",
+                      "text": "n"
+                    }
+                  ]
+                },
+                {
+                  "type": ":=",
+                  "text": ":="
+                },
+                {
+                  "type": "expression_list",
+                  "text": "5",
+                  "children": [
+                    {
+                      "type": "int_literal",
+                      "text": "5"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "\n",
+              "text": "\\n"
+            },
+            {
+              "type": "short_var_declaration",
+              "text": "result := factorial(n)",
+              "children": [
+                {
+                  "type": "expression_list",
+                  "text": "result",
+                  "children": [
+                    {
+                      "type": "identifier",
+                      "text": "result"
+                    }
+                  ]
+                },
+                {
+                  "type": ":=",
+                  "text": ":="
+                },
+                {
+                  "type": "expression_list",
+                  "text": "factorial(n)",
+                  "children": [
+                    {
+                      "type": "call_expression",
+                      "text": "factorial(n)",
+                      "children": [
+                        {
+                          "type": "identifier",
+                          "text": "factorial"
+                        },
+                        {
+                          "type": "argument_list",
+                          "text": "(n)",
+                          "children": [
+                            {
+                              "type": "(",
+                              "text": "("
+                            },
+                            {
+                              "type": "identifier",
+                              "text": "n"
+                            },
+                            {
+                              "type": ")",
+                              "text": ")"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "\n",
+              "text": "\\n"
+            },
+            {
+              "type": "call_expression",
+              "text": "fmt.Printf(\"Factorial of %d is %d\\n\", n, result)",
+              "children": [
+                {
+                  "type": "selector_expression",
+                  "text": "fmt.Printf",
+                  "children": [
+                    {
+                      "type": "identifier",
+                      "text": "fmt"
+                    },
+                    {
+                      "type": ".",
+                      "text": "."
+                    },
+                    {
+                      "type": "field_identifier",
+                      "text": "Printf"
+                    }
+                  ]
+                },
+                {
+                  "type": "argument_list",
+                  "text": "(\"Factorial of %d is %d\\n\", n, result)",
+                  "children": [
+                    {
+                      "type": "(",
+                      "text": "("
+                    },
+                    {
+                      "type": "interpreted_string_literal",
+                      "text": "\"Factorial of %d is %d\\n\"",
+                      "children": [
+                        {
+                          "type": "\"",
+                          "text": "\""
+                        },
+                        {
+                          "type": "escape_sequence",
+                          "text": "\\n"
+                        },
+                        {
+                          "type": "\"",
+                          "text": "\""
+                        }
+                      ]
+                    },
+                    {
+                      "type": ",",
+                      "text": ","
+                    },
+                    {
+                      "type": "identifier",
+                      "text": "n"
+                    },
+                    {
+                      "type": ",",
+                      "text": ","
+                    },
+                    {
+                      "type": "identifier",
+                      "text": "result"
+                    },
+                    {
+                      "type": ")",
+                      "text": ")"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "\n",
+              "text": "\\n"
+            },
+            {
+              "type": "}",
+              "text": "}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,308 @@
+{
+  "type": "source_file",
+  "text": "package main\\n\\nimport (\\n\t\"fmt\"\\n\t\"reachability_sandbox/local_imports\"\\n)\\n\\nfunc main() {\\n\tx := 5\\n\tfmt.Println(\"The double of\", x, \"is\", local_imports.double(x))\\n}\\n",
+  "children": [
+    {
+      "type": "package_clause",
+      "text": "package main",
+      "children": [
+        {
+          "type": "package",
+          "text": "package"
+        },
+        {
+          "type": "package_identifier",
+          "text": "main"
+        }
+      ]
+    },
+    {
+      "type": "\n",
+      "text": "\\n\\n"
+    },
+    {
+      "type": "import_declaration",
+      "text": "import (\\n\t\"fmt\"\\n\t\"reachability_sandbox/local_imports\"\\n)",
+      "children": [
+        {
+          "type": "import",
+          "text": "import"
+        },
+        {
+          "type": "import_spec_list",
+          "text": "(\\n\t\"fmt\"\\n\t\"reachability_sandbox/local_imports\"\\n)",
+          "children": [
+            {
+              "type": "(",
+              "text": "("
+            },
+            {
+              "type": "import_spec",
+              "text": "\"fmt\"",
+              "children": [
+                {
+                  "type": "interpreted_string_literal",
+                  "text": "\"fmt\"",
+                  "children": [
+                    {
+                      "type": "\"",
+                      "text": "\""
+                    },
+                    {
+                      "type": "\"",
+                      "text": "\""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "\n",
+              "text": "\\n"
+            },
+            {
+              "type": "import_spec",
+              "text": "\"reachability_sandbox/local_imports\"",
+              "children": [
+                {
+                  "type": "interpreted_string_literal",
+                  "text": "\"reachability_sandbox/local_imports\"",
+                  "children": [
+                    {
+                      "type": "\"",
+                      "text": "\""
+                    },
+                    {
+                      "type": "\"",
+                      "text": "\""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "\n",
+              "text": "\\n"
+            },
+            {
+              "type": ")",
+              "text": ")"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "\n",
+      "text": "\\n\\n"
+    },
+    {
+      "type": "function_declaration",
+      "text": "func main() {\\n\tx := 5\\n\tfmt.Println(\"The double of\", x, \"is\", local_imports.double(x))\\n}",
+      "children": [
+        {
+          "type": "func",
+          "text": "func"
+        },
+        {
+          "type": "identifier",
+          "text": "main"
+        },
+        {
+          "type": "parameter_list",
+          "text": "()",
+          "children": [
+            {
+              "type": "(",
+              "text": "("
+            },
+            {
+              "type": ")",
+              "text": ")"
+            }
+          ]
+        },
+        {
+          "type": "block",
+          "text": "{\\n\tx := 5\\n\tfmt.Println(\"The double of\", x, \"is\", local_imports.double(x))\\n}",
+          "children": [
+            {
+              "type": "{",
+              "text": "{"
+            },
+            {
+              "type": "short_var_declaration",
+              "text": "x := 5",
+              "children": [
+                {
+                  "type": "expression_list",
+                  "text": "x",
+                  "children": [
+                    {
+                      "type": "identifier",
+                      "text": "x"
+                    }
+                  ]
+                },
+                {
+                  "type": ":=",
+                  "text": ":="
+                },
+                {
+                  "type": "expression_list",
+                  "text": "5",
+                  "children": [
+                    {
+                      "type": "int_literal",
+                      "text": "5"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "\n",
+              "text": "\\n"
+            },
+            {
+              "type": "call_expression",
+              "text": "fmt.Println(\"The double of\", x, \"is\", local_imports.double(x))",
+              "children": [
+                {
+                  "type": "selector_expression",
+                  "text": "fmt.Println",
+                  "children": [
+                    {
+                      "type": "identifier",
+                      "text": "fmt"
+                    },
+                    {
+                      "type": ".",
+                      "text": "."
+                    },
+                    {
+                      "type": "field_identifier",
+                      "text": "Println"
+                    }
+                  ]
+                },
+                {
+                  "type": "argument_list",
+                  "text": "(\"The double of\", x, \"is\", local_imports.double(x))",
+                  "children": [
+                    {
+                      "type": "(",
+                      "text": "("
+                    },
+                    {
+                      "type": "interpreted_string_literal",
+                      "text": "\"The double of\"",
+                      "children": [
+                        {
+                          "type": "\"",
+                          "text": "\""
+                        },
+                        {
+                          "type": "\"",
+                          "text": "\""
+                        }
+                      ]
+                    },
+                    {
+                      "type": ",",
+                      "text": ","
+                    },
+                    {
+                      "type": "identifier",
+                      "text": "x"
+                    },
+                    {
+                      "type": ",",
+                      "text": ","
+                    },
+                    {
+                      "type": "interpreted_string_literal",
+                      "text": "\"is\"",
+                      "children": [
+                        {
+                          "type": "\"",
+                          "text": "\""
+                        },
+                        {
+                          "type": "\"",
+                          "text": "\""
+                        }
+                      ]
+                    },
+                    {
+                      "type": ",",
+                      "text": ","
+                    },
+                    {
+                      "type": "call_expression",
+                      "text": "local_imports.double(x)",
+                      "children": [
+                        {
+                          "type": "selector_expression",
+                          "text": "local_imports.double",
+                          "children": [
+                            {
+                              "type": "identifier",
+                              "text": "local_imports"
+                            },
+                            {
+                              "type": ".",
+                              "text": "."
+                            },
+                            {
+                              "type": "field_identifier",
+                              "text": "double"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "argument_list",
+                          "text": "(x)",
+                          "children": [
+                            {
+                              "type": "(",
+                              "text": "("
+                            },
+                            {
+                              "type": "identifier",
+                              "text": "x"
+                            },
+                            {
+                              "type": ")",
+                              "text": ")"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": ")",
+                      "text": ")"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "\n",
+              "text": "\\n"
+            },
+            {
+              "type": "}",
+              "text": "}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "\n",
+      "text": "\\n"
+    }
+  ]
+}
